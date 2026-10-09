@@ -1,7 +1,7 @@
 /* DDL commands for bronze layer */
 
 IF OBJECT_ID('bronze.crm_cust_info','U') IS NOT NULL
-	DROP bronze.crm_cust_info;
+	DROP TABLE bronze.crm_cust_info;
 
 CREATE TABLE bronze.crm_cust_info(
 cst_id INT,
@@ -14,7 +14,7 @@ prd_end_dt DATE
 );
 
 IF OBJECT_ID('bronze.crm_prd_info','U') IS NOT NULL
-	DROP bronze.crm_cust_info;
+	DROP TABLE bronze.crm_prd_info;
 
 CREATE TABLE bronze.crm_prd_info(
 prd_id INT,
@@ -26,7 +26,7 @@ prd_start_dt DATETIME,
 prd_end_dt DATETIME
 );
 IF OBJECT_ID('bronze.crm_sales_details','U') IS NOT NULL
-	DROP bronze.crm_cust_info;
+	DROP TABLE bronze.crm_sales_details;
 
 CREATE TABLE bronze.crm_sales_details(
 sls_ord_num NVARCHAR(50),
@@ -42,21 +42,21 @@ sls_price INT
 
 
 IF OBJECT_ID('bronze.crm_cust_info','U') IS NOT NULL
-	DROP bronze.crm_cust_info;
+	DROP TABLE bronze.crm_cust_info;
 CREATE TABLE bronze.erp_cust_az12(
 CID NVARCHAR(50),
 BDATE DATE,
 GEN NVARCHAR(50)
 );
 IF OBJECT_ID('bronze.erp_LOC_A101','U') IS NOT NULL
-	DROP bronze.crm_cust_info;
+	DROP TABLE bronze.erp_LOC_A101;
 DROP TABLE IF EXISTS bronze.erp_LOC_A101;
 CREATE TABLE bronze.erp_loc_a101(
 CID NVARCHAR(50),
 CNTRY NVARCHAR(50)
 );
-IF OBJECT_ID('bronze.crm_cust_info','U') IS NOT NULL
-	DROP bronze.crm_cust_info;
+IF OBJECT_ID('bronze.erp_PX_CAT_G1V2','U') IS NOT NULL
+	DROP TABLE bronze.erp_PX_CAT_G1V2;
 DROP TABLE IF EXISTS bronze.erp_PX_CAT_G1V2;
 CREATE TABLE bronze.erp_px_cat_g1v2(
 ID NVARCHAR(50),
