@@ -41,8 +41,8 @@ sls_price INT
 );
 
 
-IF OBJECT_ID('bronze.crm_cust_info','U') IS NOT NULL
-	DROP TABLE bronze.crm_cust_info;
+IF OBJECT_ID('bronze.erp_cust_az12','U') IS NOT NULL
+	DROP TABLE bronze.erp_cust_az12;
 CREATE TABLE bronze.erp_cust_az12(
 CID NVARCHAR(50),
 BDATE DATE,
