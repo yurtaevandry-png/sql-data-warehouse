@@ -48,19 +48,18 @@ CID NVARCHAR(50),
 BDATE DATE,
 GEN NVARCHAR(50)
 );
-IF OBJECT_ID('bronze.erp_LOC_A101','U') IS NOT NULL
-	DROP TABLE bronze.erp_LOC_A101;
-DROP TABLE IF EXISTS bronze.erp_LOC_A101;
+IF OBJECT_ID('bronze.erp_loc_a101','U') IS NOT NULL
+	DROP TABLE bronze.erp_loc_a101;
+DROP TABLE IF EXISTS bronze.erp_loc_a101;
 CREATE TABLE bronze.erp_loc_a101(
 CID NVARCHAR(50),
 CNTRY NVARCHAR(50)
 );
-IF OBJECT_ID('bronze.erp_PX_CAT_G1V2','U') IS NOT NULL
-	DROP TABLE bronze.erp_PX_CAT_G1V2;
-DROP TABLE IF EXISTS bronze.erp_PX_CAT_G1V2;
+IF OBJECT_ID('bronze.erp_px_cat_g1v2','U') IS NOT NULL
+	DROP TABLE bronze.erp_px_cat_g1v2;
+DROP TABLE IF EXISTS bronze.erp_px_cat_g1v2;
 CREATE TABLE bronze.erp_px_cat_g1v2(
 ID NVARCHAR(50),
 CAT NVARCHAR(50),
 SUBCAT NVARCHAR(50),
 MAINTENANCE NVARCHAR(50),
-);
